@@ -17,7 +17,7 @@ function draw() {
 	
 	
 	if(a< 0){
-		i - 1;
+		i = 1;
 	}
 
 }

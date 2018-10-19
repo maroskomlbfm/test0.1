@@ -1,16 +1,19 @@
-var teapot;
-
-function preload() {
-  teapot = loadModel('assets/teapot.obj');
-}
-
+var a =0;
+var b = 0;
+var c = 0;
+var i = 1;
 function setup() {
-  createCanvas(100, 100, WEBGL);
+  createCanvas(400,400);
+	frameRate(5);
+	
 }
 
 function draw() {
-  background(200);
-  rotateX(frameCount * 0.01);
-  rotateY(frameCount * 0.01);
-  model(teapot);
+	
+	background(a,b,c)
+	a = random(0,250);
+	b = random(0,250);
+	c = random(0,250);
+	
+
 }

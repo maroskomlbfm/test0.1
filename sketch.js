@@ -1,32 +1,16 @@
-var a =0;
-var b = 0;
-var c = 0;
-var i = 1;
+var teapot;
+
+function preload() {
+  teapot = loadModel('assets/teapot.obj');
+}
+
 function setup() {
-  createCanvas(400,400);
+  createCanvas(100, 100, WEBGL);
 }
 
 function draw() {
-	
-	background(a,b,c)
-	a = a  + i;
-	
-	if(a>255)  {
-		i = -1;
-	}
-	
-	
-	if(a< 0){
-		i = 1;
-
-	if(b>255)  {
-		i = -1;
-	}
-	
-	
-	if(b< 0){
-		i = 1;
-	}		
-	}
-
+  background(200);
+  rotateX(frameCount * 0.01);
+  rotateY(frameCount * 0.01);
+  model(teapot);
 }
